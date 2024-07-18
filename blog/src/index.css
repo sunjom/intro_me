@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'naverCoding';
+  src: url('./font/D2Coding-Ver1.3-20171129.ttf');
+}
+
+body{
+  margin:0;
+  width:100vw;
+  
+}
