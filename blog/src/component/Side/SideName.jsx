@@ -13,7 +13,7 @@ export default function SideName({check}){
                     duration:2.5,
                 }}
                 >
-                    <p className='text-2xl font-bold '>제 이름은 유선종입니다!</p>
+                    <p className='text-2xl font-bold '>My Name is YouSeonJong</p>
                 </motion.div> : ''}
         </>
         

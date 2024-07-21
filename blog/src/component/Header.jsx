@@ -1,4 +1,4 @@
-import HeaderCnt from "./HeaderCnt";
+import HeaderCnt from "./main/HeaderCnt";
 import SideHeader from "./Side/SideHeader";
 export default function Header(){
     return(
