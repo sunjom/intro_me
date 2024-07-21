@@ -7,8 +7,11 @@
   src: url('./font/D2Coding-Ver1.3-20171129.ttf');
 }
 
+:root{
+  --main-bg-color:#737373;
+}
+
 body{
   margin:0;
   width:100vw;
-  
 }
