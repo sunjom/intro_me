@@ -1,4 +1,4 @@
-import Info from '../../img/info.png'
+import Info from '../../../img/info.png'
 import SideContent from './SideContent';
 export default function SideHeader(){
 

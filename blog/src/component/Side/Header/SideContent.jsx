@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import {motion} from'framer-motion';
-import comments from '../../data/comment'
+import comments from '../../../data/comment'
 import SideName from "./SideName";
 export default function SideContent(){
     const num = useRef(0);

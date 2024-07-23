@@ -1,4 +1,4 @@
-import Box from "./Box";
+import Box from "../Box";
 import Cnt from "./Cnt";
 import Title from "./Title";
 
