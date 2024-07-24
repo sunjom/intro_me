@@ -1,0 +1,11 @@
+.SideCommon{
+    width:35%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    font-family: 'naverCoding';
+    background-color: var(--main-bg-color);
+}

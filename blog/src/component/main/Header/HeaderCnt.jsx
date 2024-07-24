@@ -1,10 +1,10 @@
 import Box from "../Box";
 import Cnt from "./Cnt";
 import Title from "./Title";
-
+import '../MainCss.css'
 export default function HeaderCnt(){
     return(
-        <div className="w-2/3 h-screen flex flex-col items-center justify-between">
+        <div className="MainCommon">
             <Title />
             <Cnt/>
         </div>

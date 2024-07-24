@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useEffect, useState } from "react";
 import Header from "./component/Header";
-import MyInfo from "./component/MyInfo";
+import SideMain from "./component/Side/Main/SideMain";
 function App() {
   const outerDiv = useRef();
   const num = useRef(0);
@@ -61,8 +61,7 @@ function App() {
   return (
     <div ref={outerDiv} className="h-screen overflow-y-scroll scrollbar-hide">
       <Header/>
-      <Header/>
-      <Header/>
+      <SideMain/>
     </div>
   );
 }

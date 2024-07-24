@@ -5,6 +5,7 @@ export default function Header(){
         <div className="w-screen h-screen flex">
             <SideHeader/>
             <HeaderCnt/>
+            
         </div>
     )
 }
