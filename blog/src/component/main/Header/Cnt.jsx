@@ -1,8 +1,8 @@
 import Box from "../Box";
-
+import '../MainCss.css'
 export default function Cnt(){
     return(
-        <div className="w-2/3 h-2/3 font-[GmarketSansMedium] flex flex-col justify-evenly">
+        <div className="ContextCommon">
             <Box title="개발자가 되기로한 이유" />
             <p>현재 HTML + CSS + JavaScript + React를 공부 중인 개발자 유선종입니다!
                 대학교에서 servlet/jsp를 공부하면서 MySQL 데이터베이스에서 질의문을 이용해 원하는 정보를 가져오는 활동같이

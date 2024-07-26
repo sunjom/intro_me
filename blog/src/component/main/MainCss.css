@@ -6,3 +6,11 @@
     justify-content:space-between;
     align-items:center
 }
+.ContextCommon{
+    width:66%;
+    height:66%;
+    font-family:'GmarketSansMedium';
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
