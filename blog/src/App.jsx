@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useEffect, useState } from "react";
 import Header from "./component/Header";
 import Main from "./component/Main";
+import Footer from './component/Footer'
 import SideMain from "./component/Side/Main/SideMain";
 function App() {
   const outerDiv = useRef();
@@ -26,14 +27,15 @@ function App() {
       }
 
       let numCurrent = num.current;
-      if(deltaY > 0){
-
+      if(Math.abs(deltaY) > 30){
+        if(deltaY > 0){
         //scrollTop이 pageHeights보다 크면 되므로, 굳이 소수를 정수로 만들 필요는 없다.
         if(scrollTop >= pageHeights[numCurrent] && scrollTop < pageHeights[numCurrent+1] ){
+          
           if(numCurrent < pageNum-1){
             num.current +=1;
           }
-          console.log(scrollTop)
+
           outerDiv.current.scrollTo({
             top:pageHeights[num.current],
             behavior:"smooth"
@@ -42,6 +44,7 @@ function App() {
       }else{
         //여기에 Math.round를 넣어준 이유는. scrollTop이 완전한 정수로 끝나는 것이 아닌,
         //소수로 끝날수도 있기 때문이다.
+        
         if(Math.round(scrollTop) > pageHeights[numCurrent-1] && Math.round(scrollTop) <= pageHeights[num.current]){
           if(num.current > 0 ){
             num.current -=1;
@@ -53,9 +56,11 @@ function App() {
         }
       }
     }
+      }
     const outerDivCurrent = outerDiv.current;
     outerDivCurrent.addEventListener('wheel', wheelHandler);
     return ()=>{
+      console.log("A");
       outerDivCurrent.removeEventListener('wheel',wheelHandler);
     }
   },[]);
@@ -63,6 +68,7 @@ function App() {
     <div ref={outerDiv} className="h-screen overflow-y-scroll scrollbar-hide">
       <Header/>
       <Main/>
+      <Footer/>
     </div>
   );
 }
